@@ -99,9 +99,7 @@ body{
     font-size: 14px;
     margin-top: 15px;
 }
-.mainContent .personalInfo{
 
-}
 .Education{
     margin-top: 40px;
 }
@@ -243,16 +241,26 @@ input[type="submit"]:hover {
 
 
 
-@media screen and(max-width : 479px){
+@media only screen and (max-width: 600px) {
+    .nav{
+        width: 100%;
+        height: 100x;
+        display: flex;
+        justify-content: space-between;
+        background-color: black;
+        color: white;
+    }
+    .logo{
+        width: 200px;
+    }
     .logo h1{
         font-family: cursive;
         font-size: 15px;
         font-weight: bolder;
-        margin: 20px 25px;
+        margin: 20px 15px;
     }
     .menu{
         width: 300px;
-        font-size: 15px;
     }
     .menu ul{
         display: flex;
@@ -272,4 +280,207 @@ input[type="submit"]:hover {
     .menu ul li a{
         all : unset;
     }
+    
+    .mainContent{
+        width: 100%;
+        height: 1400px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left .profile{
+        width: 100%;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        background-color: #f9f9f9;
+        display:block;
+        
+    }
+    .left .profile .myPhoto{
+        width: 150px;
+        height: 150px;
+        padding: 25px 40px;
+        border-radius: 50%;
+    }
+    .left .profile .myPhoto img{
+        width: 100%;
+        height: 100%;
+    }
+    .left .profile .myPhoto img:hover{
+        filter: blur(1px);
+        cursor: pointer;
+    }
+    .left .profile .myInfo{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .left .profile .myInfo{
+        width: 100%;
+        height: 100%;
+        margin : 30px 0px;
+    }
+    .left .profile .myInfo h1{
+        font-size: 35px;
+        color : #fca311;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .left .profile .myInfo h3{
+        opacity: 0.7;
+        margin-top: 15px;
+    }
+    .left .profile .myInfo h6{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 100;
+        font-size: 14px;
+        margin-top: 15px;
+    }
+    
+  
+    
+    
+    /*About me*/
+    .aboutContent{
+        width: 100%;
+        height: 700px;
+        background-color: #f9f9f9;
+        text-align: center;
+    }
+    .aboutContent h1{
+        padding-top: 70px;
+        font-size: 30px;
+        letter-spacing: 3px;
+    }   
+    .aboutContent h3{
+        margin: 30px 0px;
+        width: 100%;
+        height: 500px;
+        text-align: center;
+        word-spacing: 3px;
+        letter-spacing: 1px;
+        font-size: 14px;
+    
+    }
+    
+    
+}
+
+@media only screen and (max-width: 768px) {
+    .nav{
+        width: 100%;
+        height: 100x;
+        display: flex;
+        justify-content: space-between;
+        background-color: black;
+        color: white;
+    }
+    .logo{
+        width: 200px;
+    }
+    .logo h1{
+        font-family: cursive;
+        font-size: 15px;
+        font-weight: bolder;
+        margin: 20px 15px;
+    }
+    .menu{
+        width: 300px;
+    }
+    .menu ul{
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+    .menu ul li{
+        all : unset;
+        margin: 10px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 15px;
+    }
+    .menu ul li:hover{
+        opacity: 0.51;
+        cursor: pointer;
+    }
+    .menu ul li a{
+        all : unset;
+    }
+    
+    .mainContent{
+        width: 100%;
+        height: 1400px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left .profile{
+        width: 100%;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        background-color: #f9f9f9;
+        display:block;
+        
+    }
+    .left .profile .myPhoto{
+        width: 150px;
+        height: 150px;
+        padding: 25px 40px;
+        border-radius: 50%;
+    }
+    .left .profile .myPhoto img{
+        width: 100%;
+        height: 100%;
+    }
+    .left .profile .myPhoto img:hover{
+        filter: blur(1px);
+        cursor: pointer;
+    }
+    .left .profile .myInfo{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .left .profile .myInfo{
+        width: 100%;
+        height: 100%;
+        margin : 30px 0px;
+    }
+    .left .profile .myInfo h1{
+        font-size: 35px;
+        color : #fca311;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .left .profile .myInfo h3{
+        opacity: 0.7;
+        margin-top: 15px;
+    }
+    .left .profile .myInfo h6{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 100;
+        font-size: 14px;
+        margin-top: 15px;
+    }
+    
+    
+    
+   /*About me*/
+   .aboutContent{
+    width: 100%;
+    height: 700px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+.aboutContent h1{
+    padding-top: 70px;
+    font-size: 35px;
+    letter-spacing: 3px;
+}   
+.aboutContent h3{
+    margin: 30px 0px;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    font-size: 18px;
+
+}
+    
 }
